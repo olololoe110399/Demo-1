@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color1"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <RelativeLayout
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="left"
+            android:src="#ffffff" />
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/ic_back"></ImageView>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="COSMETICS"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlack"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+        android:layout_margin="10dp"
+        android:background="@drawable/bgradius"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <RelativeLayout
+            android:layout_width="265dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_margin="7dp">
+
+            <ImageView
+                android:id="@+id/avatar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/picture1"
+                />
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="ID COSMETIC"
+            android:textColor="@color/colorBlack" />
+
+        <EditText
+            android:id="@+id/edtidcosmetic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:text="0238"
+            android:textColor="@color/colorBlack" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NAME COSMETICS"
+            android:textColor="@color/colorBlack" />
+
+        <EditText
+            android:text="NuocHoa Tim"
+            android:id="@+id/edtnamecosmetics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:textColor="@color/colorBlack" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="PRICE"
+
+            android:textColor="@color/colorBlack" />
+
+        <EditText
+            android:text="2000000"
+            android:inputType="number"
+            android:id="@+id/edtprice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="AMOUNT"
+            android:textColor="@color/colorBlack" />
+
+        <EditText
+            android:text="10"
+            android:id="@+id/edtamount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:textColor="@color/colorBlack" />
+
+        <Button
+            android:id="@+id/addcosmetics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttonbg"
+            android:fontFamily="sans-serif-medium"
+            android:padding="14dp"
+            android:text="ADD"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Demo_kotlin</string>
+    <string name="map_key" translatable="false">
+AIzaSyAdYl5sPMCD1GC_A4yZsogPLoQo2lv9jSQ  </string>
+    <!-- colors -->
+    <color name="primary">#785447</color>
+    <color name="primaryDark">#5B3F36</color>
+    <string name="signin">
+         <u>Sign in here</u>.
+    </string>
+    //facebook
+    <string name="fb_login_protocol_scheme">fb561597637767422</string>
+    <string name="facebook_app_id">561597637767422</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="text_login">Login</string>
+    <string name="text_register">Register</string>
+    <string name="error_message_name">Enter Full Name</string>
+    <string name="error_message_namebook">Enter Name Book</string>
+    <string name="error_message_nxb">Enter NXB</string>
+    <string name="error_message_author">Enter Author</string>
+    <string name="error_message_Price">Enter Price</string>
+    <string name="error_message_amout">Enter Amout</string>
+    <string name="error_message_user">Enter User Name</string>
+    <string name="error_message_email">Enter Valid Email</string>
+    <string name="error_message_phone">Enter Valid Phone</string>
+    <string name="error_message_age">Enter Age</string>
+    <string name="error_message_password">Enter Password</string>
+    <string name="success_message">Registration Successful</string>
+    <string name="text_not_member">No account yet? Create one</string>
+    <string name="text_already_member">Already a member? Login</string>
+    <string name="error_email_exists">Email Already Exists</string>
+    <string name="error_password_match">Password Does Not Matches</string>
+    <string name="error_valid_email_password">Wrong Email or Password</string>
+    <string name="error_valid_email">Wrong Email</string>
+    <string name="error_valid_phone">Wrong Phone</string>
+    <string name="text_member">Already a member? Login</string>
+    <string name="error_id_exists">ID Already Exists</string>
+    <string name="error_message_id">Enter Valid ID</string>
+    <string name="error_message_namecategory">Enter Valid Name Category</string>
+    <string name="error_message_description">Enter Valid Description </string>
+    <string name="error_message_location">Enter Valid Location</string>
+    <string name="successfully">Successfully</string>
+    <string name="please_connect_to_internet">Please connect to internet!</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_up">Sign up</string>
+    <string name="duysnipper1103">\@duysnipper1103</string>
+    <string name="address">ADDRESS</string>
+    <string name="name_adress">44 Ha huy Tap</string>
+    <string name="full_name">FULL NAME</string>
+    <string name="name">Nguyen Ngoc Duy</string>
+    <string name="phone">PHONE</string>
+    <string name="phone_number">0793333648</string>
+    <string name="update">UPDATE</string>
+    <string name="account_info">Account Info</string>
+    <string name="emtry">########</string>
+    <string name="mobile">Mobile</string>
+    <string name="email">Email</string>
+    <string name="_50">50</string>
+    <string name="price">20,000,000VND</string>
+    <string name="name_cart">JEAN</string>
+</resources>
+

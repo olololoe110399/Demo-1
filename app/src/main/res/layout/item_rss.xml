@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/onclick"
+    android:padding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/titleEntry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tittle"
+        android:textColor="@color/color"
+        android:textSize="20dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textColor="@color/colorBlack2"
+        android:textSize="18sp" />
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="10dp"
+        android:id="@+id/cardViewclothes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="5dp"
+        card_view:cardMaxElevation="5dp"
+        >
+
+
+        <LinearLayout
+            android:background="@color/color1"
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgclothes"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:background="@drawable/picture1"
+                />
+
+
+            <TextView
+                android:id="@+id/tvnameclothes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:text="JEANS"
+                android:textColor="@color/color"
+                android:textStyle="bold" />
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/tvprice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="50,000VND"
+                android:textColor="@color/color" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/liner"
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:background="@color/color1">
+
+
+        <LinearLayout
+            android:padding="30dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bgradius" >
+            <TextView
+                android:text="Username or Email:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></TextView>
+            <EditText
+                android:id="@+id/edtuser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></EditText>
+            <TextView
+                android:text="Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></TextView>
+            <EditText
+                android:inputType="textPassword"
+                android:id="@+id/edtpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></EditText>
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remember me"
+                android:textColor="@color/colorBlack2"/>
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/login_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btnsubmit"
+        android:textColor="@color/colorWhite"
+        android:text="Submit"
+        android:layout_marginTop="-25dp"
+        android:layout_below="@+id/liner"
+        android:layout_centerHorizontal="true"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonbg"
+        />
+    <TextView
+        android:layout_below="@+id/btnsubmit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:text="Forgot your password?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"></TextView>
+
+</RelativeLayout></ScrollView>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activites.LoginActivity">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/useLogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:elevation="5dp"
+        android:src="@drawable/logo"
+        app:civ_border_color="@color/colorWhite"
+        app:civ_border_width="1dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/useLogo"
+        android:layout_marginTop="20dp"
+        android:elevation="10dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnSignin"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btnsginin1"
+            android:elevation="@dimen/dp_5"
+            android:onClick="onClick"
+            android:text="@string/sign_in"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnSingnup"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp"
+            android:background="@drawable/btnsignup2"
+            android:elevation="5dp"
+            android:onClick="onClick"
+            android:text="@string/sign_up"
+            android:textColor="@color/color"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_container2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/useLogo"
+        android:layout_marginTop="50dp" />
+
+
+</RelativeLayout>

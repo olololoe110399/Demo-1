@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/News"
+        android:enabled="true"
+        android:icon="@drawable/ic_new"
+        android:title="News" />
+
+
+    <item
+        android:id="@+id/Clothes"
+        android:enabled="true"
+        android:icon="@drawable/ic_store"
+        android:title="Cosmetics" />
+    <item
+        android:id="@+id/Cart"
+        android:enabled="false"
+        android:title=""/>
+
+    <item
+        android:id="@+id/File"
+        android:enabled="true"
+        android:icon="@drawable/ic_file"
+        android:title="Storage" />
+    <item
+        android:id="@+id/User"
+        android:enabled="true"
+        android:icon="@drawable/ic_user"
+        android:title="User" />
+</menu>

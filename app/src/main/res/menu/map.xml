@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/zoomin"
+        android:enabled="true"
+        android:icon="@drawable/ic_zoom_in_"
+        android:title="Zoom in" />
+
+
+    <item
+        android:id="@+id/zomout"
+        android:enabled="true"
+        android:icon="@drawable/ic_zoom_out_"
+        android:title="Zoom out" />
+</menu>

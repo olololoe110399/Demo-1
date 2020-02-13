@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar"
+        ></include>
+
+
+    <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_marginBottom="55dp"
+        />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/colorWhite"
+        app:itemIconSize="27dp"
+        app:itemIconTint="@color/select"
+        app:itemTextColor="@color/color"
+        app:menu="@menu/main" />
+    <RelativeLayout
+        android:elevation="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnfloat"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="-15dp"
+            android:elevation="10dp">
+
+            <TextView
+                android:id="@+id/tvCount"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/colorWhite"></TextView>
+        </RelativeLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnfloat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/ic_cart"
+            app:backgroundTint="@color/color">
+
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

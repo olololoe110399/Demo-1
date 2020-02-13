@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/sreachstudent"
+        android:title="Search"
+        android:icon="@drawable/search"
+        app:showAsAction="always"
+        app:actionViewClass="android.widget.SearchView">
+    </item>
+    <item
+        android:id="@+id/addstudent"
+        android:icon="@drawable/add"
+        app:showAsAction="ifRoom"
+        android:title=""/>
+
+</menu>

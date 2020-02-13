@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color1"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <RelativeLayout
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="left"
+            android:src="#ffffff" />
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/ic_back"></ImageView>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="EMPLOYEES"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlack"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+        android:layout_margin="10dp"
+        android:background="@drawable/bgradius"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="7dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/avatar"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/avatar"
+                app:civ_border_color="#B3FFFFFF"
+                app:civ_border_width="2dp" />
+
+            <RelativeLayout
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/camera"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="#d3d6db"
+                    app:civ_border_color="#1A000000"
+                    app:civ_border_width="2dp">
+
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_camera" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="USER NAME(EMAIL)"
+            android:textColor="@color/colorBlack" />
+
+        <EditText
+            android:id="@+id/edtusername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="PASSWORD"
+            android:textColor="@color/colorBlack" />
+
+        <EditText
+            android:id="@+id/edtpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="CONFIRM PASSWORD"
+            android:textColor="@color/colorBlack" />
+
+        <EditText
+            android:id="@+id/edtconfirmpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="ADDRESS"
+            android:textColor="@color/colorBlack" />
+
+        <EditText
+            android:id="@+id/edtaddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FULL NAME"
+            android:textColor="@color/colorBlack" />
+
+        <EditText
+            android:id="@+id/edtnameemployees"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:textColor="@color/colorBlack" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="PHONE"
+            android:textColor="@color/colorBlack" />
+
+        <EditText
+            android:id="@+id/edtphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:textColor="@color/colorBlack" />
+
+        <Button
+            android:id="@+id/addstudent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttonbg"
+            android:fontFamily="sans-serif-medium"
+            android:padding="14dp"
+            android:text="ADD"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout android:id="@+id/app_bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    android:theme="@style/ToolBarStyle"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.appbar.CollapsingToolbarLayout
+        android:id="@+id/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        app:contentScrim="@color/color"
+        app:expandedTitleMarginEnd="64dp"
+        app:expandedTitleMarginStart="48dp"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+        app:toolbarId="@+id/toolbar2">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="278dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/avatartoolbar"
+                android:layout_marginTop="10dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/avatar"
+                app:layout_anchor="@id/toolbar_layout"
+                app:layout_anchorGravity="bottom|center"
+                app:layout_collapseMode="pin" />
+
+            <TextView
+                android:id="@+id/Username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\@appsnippuser"
+                android:textSize="28dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvemail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="developer@appsnipp.com"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorWhite"
+                android:gravity="center">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/color" />
+
+                <RelativeLayout
+                    android:layout_centerHorizontal="true"
+                    app:layout_collapseMode="pin"
+                    app:layout_anchorGravity="bottom|center"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp">
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/camera"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="#FFFFFF"
+                        app:civ_border_color="#1A000000"
+                        app:civ_border_width="2dp">
+
+                    </de.hdodenhof.circleimageview.CircleImageView>
+
+                    <ImageView
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/up" /></RelativeLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_collapseMode="pin"
+            app:popupTheme="@style/ToolBarStyle">
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+</com.google.android.material.appbar.AppBarLayout>

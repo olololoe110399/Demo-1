@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/itemstudent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:hardwareAccelerated="true"
+    app:cardBackgroundColor="@color/cardview_dark_background"
+    app:cardCornerRadius="5dp"
+    card_view:cardElevation="5dp"
+    card_view:cardUseCompatPadding="false">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@color/color1"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tvnamecosmetics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/name_cart"
+
+            android:textAllCaps="true"
+            android:textColor="@color/colorBlack2"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvquantity"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/buttonbg"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:text="@string/_50"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvnamecosmetics"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+
+                android:text="Price :"
+                android:textColor="@color/colorBlack2"
+                android:textSize="18dp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/tvprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/price"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/price"
+                android:textColor="@color/colorBlack2"
+                android:textSize="18sp"
+                android:textStyle="italic" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
